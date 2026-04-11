@@ -1,382 +1,104 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>El Secreto – Carta</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      font-size: 16px;
-    }
-  </style>
+    <title>Menu</title>
 </head>
+<body>
+    <h1>Menu</h1>
+    <h2>Bocadillos</h2>
+    <ul>
+        <li>Pechuga, tomate, queso, cebolla, bacon y mayonesa: 9,50€ (large only)</li>
+        <li>Ternera, queso y pimiento: 10,50€ (large)</li>
+        <li>Ternera sola: 9,50€ (large)</li>
+        <li>Ternera y queso de cabra: 10,50€ (large)</li>
+        <li>Ternera, mozzarella y cebolla caramelizada: 10,50€ (large)</li>
+        <li>Lomo: 6,50€ (medium), 8,50€ (large)</li>
+        <li>Lomo, queso y pimiento: 7,50€ (medium), 9,50€ (large)</li>
+        <li>Lomo, roquefort y pimiento rojo: 7,50€ (medium), 9,50€ (large)</li>
+        <li>Lomo, roquefort, lechuga y tomate: 7,50€ (medium), 9,50€ (large)</li>
+        <li>Lomo, jamón, queso y pimiento: 7,50€ (medium), 9,50€ (large)</li>
+        <li>Lomo, roquefort y cebolla: 7,50€ (medium), 9,50€ (large)</li>
+        <li>Lomo adobado: 6,50€ (medium), 8,50€ (large)</li>
+        <li>Lomo adobado, queso y pimiento: 7,50€ (medium), 9,50€ (large)</li>
+        <li>Lomo adobado, roquefort y pimiento: 7,50€ (medium), 9,50€ (large)</li>
+        <li>Lomo adobado con huevo frito: 7,50€ (medium), 9,50€ (large)</li>
+        <li>Lomo adobado, jamón, queso y pimiento: 8,50€ (medium), 10,50€ (large)</li>
+        <li>Lomo adobado, roquefort y cebolla: 7,50€ (medium), 9,50€ (large)</li>
+    </ul>
 
-<body class="bg-white text-gray-800">
-  <div class="container mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold text-center text-[#556B2F] mb-6">El Secreto – Carta</h1>
+    <h2>Tostadas</h2>
+    <ul>
+        <li>Salmón, brie y tomate: 11,50€</li>
+        <li>Queso y anchoa: 8,50€</li>
+        <li>Ternera y queso de cabra: 10,50€</li>
+        <li>Lomo, roquefort y pimiento: 9,50€</li>
+        <li>Pechuga, queso, bacon y pimiento: 9,50€</li>
+        <li>Bacon, queso, huevo y pimiento: 10,50€</li>
+        <li>Salmón, brie, tomate y guacamole: 11,50€</li>
+        <li>Bacon, parmesano, tomate y guacamole: 10,50€</li>
+        <li>Pechuga, aguacate, tomate y parmesano: 10,50€</li>
+    </ul>
 
-    <!-- Botones de idioma -->
-    <div class="flex justify-center gap-4 mb-6">
-      <button onclick="showMenu('es')" class="bg-[#D4A017] hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded">Español</button>
-      <a href="MENUDIGITALEN.html" class="bg-[#D4A017] hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded">English</a>
-      <a href="MENUDIGITALFR.html" class="bg-[#D4A017] hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded">Français</a>
-    </div>
+    <h2>Sandwiches</h2>
+    <ul>
+        <li>Mixto: 6,50€</li>
+        <li>Mixto con huevo: 8,50€</li>
+        <li>Vegetal: 9,50€</li>
+        <li>All vegetal variations: 9,50€</li>
+        <li>César: 9,50€</li>
+    </ul>
 
-    <!-- Contenedor general de los menús por idioma -->
-    <div id="menu-es" class="menu-language">
-      <!-- Acordeón de secciones -->
-      <div class="border rounded-lg shadow-md divide-y divide-gray-200">
-       <section class="mb-12">
-  <h2 class="text-2xl font-semibold text-green-800 mb-4 flex items-center gap-2">🥗 ENSALADAS <span class="text-sm italic text-gray-600">(Todas vienen aliñadas)</span></h2>
-  <div class="overflow-x-auto">
-    <table class="min-w-full bg-white border border-green-200 text-sm">
-      <thead class="bg-green-100 text-green-900">
-        <tr>
-          <th class="py-2 px-4 text-left">Nombre</th>
-          <th class="py-2 px-4 text-left">Ingredientes</th>
-          <th class="py-2 px-4 text-left">Aliño</th>
-          <th class="py-2 px-4 text-right">Precio</th>
-        </tr>
-      </thead>
-      <tbody class="text-gray-800">
-        <tr class="border-t border-green-200">
-          <td class="py-2 px-4 font-semibold">ARAGONESA</td>
-          <td class="py-2 px-4">Lechuga, tomate, cebolla, olivas, atún, espárragos, huevo y jamón</td>
-          <td class="py-2 px-4">Vinagre, sal y aceite</td>
-          <td class="py-2 px-4 text-right">15€</td>
-        </tr>
-        <tr class="border-t border-green-200">
-          <td class="py-2 px-4 font-semibold">DE LA HUERTA</td>
-          <td class="py-2 px-4">Tomate, olivas negras, cebolla morada, huevo, burrata</td>
-          <td class="py-2 px-4">Sal, aceite y albahaca</td>
-          <td class="py-2 px-4 text-right">15€</td>
-        </tr>
-        <tr class="border-t border-green-200">
-          <td class="py-2 px-4 font-semibold">VENTRESCA</td>
-          <td class="py-2 px-4">Tomate, olivas, ventresca, anchoa, boquerón, cebolla tierna</td>
-          <td class="py-2 px-4">Sal y aceite</td>
-          <td class="py-2 px-4 text-right">15€</td>
-        </tr>
-        <tr class="border-t border-green-200">
-          <td class="py-2 px-4 font-semibold">TEMPLADA</td>
-          <td class="py-2 px-4">Mezcla de lechugas, frutos secos, pasas, manzana, bacon, queso de cabra</td>
-          <td class="py-2 px-4">Vinagreta de módena y miel</td>
-          <td class="py-2 px-4 text-right">15€</td>
-        </tr>
-        <tr class="border-t border-green-200">
-          <td class="py-2 px-4 font-semibold">POLLO</td>
-          <td class="py-2 px-4">Mezcla de lechugas, frutos secos, pasas, manzana, pechuga de pollo, queso de cabra</td>
-          <td class="py-2 px-4">Vinagreta de módena y miel</td>
-          <td class="py-2 px-4 text-right">15€</td>
-        </tr>
-        <tr class="border-t border-green-200">
-          <td class="py-2 px-4 font-semibold">SECRETO</td>
-          <td class="py-2 px-4">Mezcla de lechugas, frutos secos, pasas, tomate, huevo, jamón york, maíz, remolacha, espárragos, cebolla tierna, atún, queso de cabra</td>
-          <td class="py-2 px-4">Sal, aceite y vinagreta de módena</td>
-          <td class="py-2 px-4 text-right">15€</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-        <section class="mb-12 mt-8">
-  <h2 class="text-2xl font-semibold text-green-700 mb-4 flex items-center gap-2">
-    🧀 TABLAS PARA COMPARTIR 
-  </h2>
-  <div class="overflow-x-auto">
-    <table class="min-w-full table-auto border border-gray-300 text-sm text-left">
-      <thead class="bg-green-100 text-green-800">
-        <tr>
-          <th class="px-4 py-2 border">Nombre</th>
-          <th class="px-4 py-2 border">Precio</th>
-        </tr>
-      </thead>
-      <tbody class="text-gray-800">
-        <tr>
-          <td class="px-4 py-2 border"> Jamón Serrano y Queso (Pan con tomate)</td>
-          <td class="px-4 py-2 border">20 €</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
+    <h2>Raciones</h2>
+    <ul>
+        <li>Migas aragonesas: 6,50€</li>
+        <li>Migas con huevo: 7,50€</li>
+        <li>Rabas de calamar: 9,50€ (medium), 14,50€ (large)</li>
+        <li>Alitas de pollo: 7,50€ (medium), 11,50€ (large)</li>
+        <li>Chipirones a la plancha: 12€ (medium), 20€ (large)</li>
+        <li>Fingers de pollo: 7,50€ (medium), 11,50€ (large)</li>
+    </ul>
 
-<div class="border rounded-lg shadow-md divide-y divide-gray-200">
-       <section class="mb-12">
-  <h2 class="text-2xl font-semibold text-green-800 mb-4 flex items-center gap-2">🥖 BOCADILLOS</h2>
+    <h2>Hamburguesas</h2>
+    <ul>
+        <li>Completa: 9,50€</li>
+        <li>Secreto: 10,50€</li>
+        <li>Roquefort: 11,50€</li>
+        <li>Queso de cabra: 11,50€</li>
+        <li>Black Angus: 12,50€</li>
+        <li>Black Angus queso de cabra: 14€</li>
+        <li>Black Angus cebolla caramelizada: 14€</li>
+        <li>Guacamole: 12,50€</li>
+        <li>Pechuga pollo guacamole: 12,50€</li>
+    </ul>
 
-     <div class="overflow-x-auto">
-       <table class="table-auto w-full border border-gray-300 text-left text-sm">
-        <thead class="bg-green-100 text-green-900">
-         <tr>
-          <th class="px-4 py-2 text-left">Bocadillo</th>
-          <th class="px-4 py-2 text-right">Precio Medio</th>
-          <th class="px-4 py-2 text-right">Precio Grande</th>
-         </tr>
-        </thead>
-      <tbody class="bg-white text-gray-700">
-  <tr><td class="px-4 py-2">Jamón</td><td class="px-4 py-2 text-right">5,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-  <tr><td class="px-4 py-2">Jamón y queso</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-  <tr><td class="px-4 py-2">Pechuga, queso, jamón y pimiento</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-  <tr><td class="px-4 py-2">Pechuga, queso y pimiento</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-  <tr><td class="px-4 py-2">Pechuga empanada, lechuga, tomate y mayonesa</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-  <tr><td class="px-4 py-2">Pechuga, tomate, queso, cebolla, bacon y mayonesa</td><td class="px-4 py-2 text-right">9,50€</td><td class="px-4 py-2 text-right"></td></tr>
-  <tr><td class="px-4 py-2">Atún</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-  <tr><td class="px-4 py-2">Ternera, queso y pimiento</td><td class="px-4 py-2 text-right">8,50€</td><td class="px-4 py-2 text-right"></td></tr>
-  <tr><td class="px-4 py-2">Ternera sola</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right"></td></tr>
-  <tr><td class="px-4 py-2">Ternera y queso de cabra</td><td class="px-4 py-2 text-right">8,50€</td><td class="px-4 py-2 text-right"></td></tr>
-  <tr><td class="px-4 py-2">Ternera, mozzarella y cebolla caramelizada</td><td class="px-4 py-2 text-right">8,50€</td><td class="px-4 py-2 text-right"></td></tr>
-  <tr><td class="px-4 py-2">Chorizo</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-  <tr><td class="px-4 py-2">Longaniza</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-  <tr><td class="px-4 py-2">Longaniza, queso y huevo</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-  <tr><td class="px-4 py-2">Chistorra</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-   <tr><td class="px-4 py-2">Chistorra, queso y huevo</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">Panceta</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-   <tr><td class="px-4 py-2">Tortilla francesa</td><td class="px-4 py-2 text-right">5,50€</td><td class="px-4 py-2 text-right">6,50€</td></tr>
-   <tr><td class="px-4 py-2">Tortilla francesa al gusto</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-   <tr><td class="px-4 py-2">Tortilla de patata</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-   <tr><td class="px-4 py-2">Calamares</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">Frankfurt Secreto</td><td class="px-4 py-2 text-right">8,50€</td><td class="px-4 py-2 text-right"></td></tr>
-   <tr><td class="px-4 py-2">Frankfurt, queso y cebolla</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right"></td></tr>
-   <tr><td class="px-4 py-2">Frankfurt, roquefort y cebolla</td><td class="px-4 py-2 text-right">8,50€</td><td class="px-4 py-2 text-right"></td></tr>
-   <tr><td class="px-4 py-2">Lomo</td><td class="px-4 py-2 text-right">5,50€</td><td class="px-4 py-2 text-right">6,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo, queso y pimiento</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo, roquefort y pimiento rojo</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo, roquefort, lechuga y tomate</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo, jamón, queso y pimiento</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo, roquefort y cebolla</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo adobado</td><td class="px-4 py-2 text-right">5,50€</td><td class="px-4 py-2 text-right">6,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo adobado, queso y pimiento</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo adobado, roquefort y pimiento</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo adobado con huevo frito</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo adobado, jamón, queso y pimiento</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">Lomo adobado, roquefort y cebolla</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">VEGETAL (lechuga, tomate, atún, huevo, espárragos y mayonesa)</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-   <tr><td class="px-4 py-2">Bacon y queso</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-   <tr><td class="px-4 py-2">SECRETO (lechuga, tomate, tortilla de patata, jamón cocido, queso, mayonesa)</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">8,50€</td></tr>
- </tbody>
-</table>
+    <h2>Platos Combinados</h2>
+    <ul>
+        <li>Lomo: 14€</li>
+        <li>Longaniza: 14€</li>
+        <li>Chorizo: 14€</li>
+        <li>Ternera: 16€</li>
+        <li>Sepia: 18€</li>
+        <li>Panceta: 14€</li>
+        <li>Pinchos: 14€</li>
+        <li>Hamburguesa: 14€</li>
+        <li>Pechuga: 14€</li>
+        <li>Pechuga empanada: 16€</li>
+        <li>San Jacobo: 16€</li>
+        <li>Lomo empanado: 14€</li>
+        <li>Albóndigas: 14€</li>
+        <li>Chipirones ensalada: 18€</li>
+    </ul>
 
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold text-green-800 mb-4 flex items-center gap-2"> 🍞 TOSTADAS</h2>
-
-  <div class="overflow-x-auto">
-    <table class="table-auto w-full border border-gray-300 text-left text-sm">
-      <thead class="bg-green-100 text-green-900">
-        <tr>
-          <th class="px-4 py-2">Descripción</th>
-          <th class="px-4 py-2 text-right">Precio</th>
-        </tr>
-      </thead>
-      <tbody class="bg-white text-gray-700">
-        <tr><td class="px-4 py-2">Sobrasada, pimiento del piquillo, huevo y miel</td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Tortilla francesa, guacamole y tomate</td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Sobrasada y queso brie</td><td class="px-4 py-2 text-right">6,50€</td></tr>
-        <tr><td class="px-4 py-2">Jamón serrano y tomate</td><td class="px-4 py-2 text-right">5,50€</td></tr>
-        <tr><td class="px-4 py-2">Bacon y queso de cabra</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-        <tr><td class="px-4 py-2">Aguacate, bacon, tomate y mermelada de tomate</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Salmón, brie y tomate</td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Queso y anchoa</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-        <tr><td class="px-4 py-2">Ternera y queso de cabra</td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Lomo, roquefort y pimiento</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Pechuga, queso, bacon y pimiento</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Atún, tomate y anchoa</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-        <tr><td class="px-4 py-2">Jamón york, queso y huevo</td><td class="px-4 py-2 text-right">7,50€</td></tr>
-        <tr><td class="px-4 py-2">Tres quesos</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Lomo adobado, queso y pimiento</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Lomo adobado, roquefort y pimiento rojo</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Lomo adobado y queso de cabra</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Lomo adobado, huevo frito y pimiento rojo</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Bacon, queso, huevo y pimiento</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Jamón serrano, tomate y guacamole</td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Salmón, brie, tomate y guacamole</td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Bacon, parmesano, tomate y guacamole</td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Pechuga, aguacate, tomate y parmesano</td><td class="px-4 py-2 text-right">9,50€</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold text-green-800 mb-4 flex items-center gap-2">🥪 SÁNDWICHES</h2>
-
-  <div class="overflow-x-auto">
-    <table class="table-auto w-full border border-gray-300 text-left text-sm">
-      <thead class="bg-green-100 text-green-900">
-        <tr>
-          <th class="px-4 py-2">Descripción</th>
-          <th class="px-4 py-2 text-right">Precio</th>
-        </tr>
-      </thead>
-      <tbody class="bg-white text-gray-700">
-        <tr>
-          <td class="px-4 py-2">Mixto (jamón york y queso)</td>
-          <td class="px-4 py-2 text-right">5,50€</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Mixto con huevo</td>
-          <td class="px-4 py-2 text-right">7,50€</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">VEGETAL (lechuga, tomate, atún, huevo, espárragos y mayonesa)</td>
-          <td class="px-4 py-2 text-right">7,50€</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Vegetal con jamón york y queso</td>
-          <td class="px-4 py-2 text-right">8,50€</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Vegetal con pechuga</td>
-          <td class="px-4 py-2 text-right">8,50€</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Vegetal con salmón</td>
-          <td class="px-4 py-2 text-right">8,50€</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">Vegetal con roquefort y bacon</td>
-          <td class="px-4 py-2 text-right">8,50€</td>
-        </tr>
-        <tr>
-          <td class="px-4 py-2">CÉSAR (lechuga mixta, pechuga empanada, parmesano, salsa César)</td>
-          <td class="px-4 py-2 text-right">8,50€</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold text-green-800 mb-4 flex items-center gap-2">🍟 RACIONES <span class="text-sm font-normal text-gray-600 ml-2">(Tamaño medio / grande)</span></h2>
-
-  <div class="overflow-x-auto">
-    <table class="table-auto w-full border border-gray-300 text-left text-sm">
-      <thead class="bg-green-100 text-green-900">
-        <tr>
-          <th class="px-4 py-2">Descripción</th>
-          <th class="px-4 py-2 text-right">Precio Medio</th>
-          <th class="px-4 py-2 text-right">Precio Grande</th>
-        </tr>
-      </thead>
-      <tbody class="bg-white text-gray-700">
-        <tr><td class="px-4 py-2">Migas aragonesas</td><td class="px-4 py-2 text-right">5,50€</td><td class="px-4 py-2 text-right"></td></tr>
-        <tr><td class="px-4 py-2">Migas con huevo</td><td class="px-4 py-2 text-right">6,50€</td><td class="px-4 py-2 text-right"></td></tr>
-        <tr><td class="px-4 py-2">Patatas bravas</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">10,50€</td></tr>
-        <tr><td class="px-4 py-2">Tiras de calamar</td><td class="px-4 py-2 text-right">9,50€</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Sepia a la plancha estilo español</td><td class="px-4 py-2 text-right">12€</td><td class="px-4 py-2 text-right">18€</td></tr>
-        <tr><td class="px-4 py-2">Alitas de pollo</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Chopitos</td><td class="px-4 py-2 text-right">12€</td><td class="px-4 py-2 text-right">16€</td></tr>
-        <tr><td class="px-4 py-2">Chipirones a la plancha</td><td class="px-4 py-2 text-right">14€</td><td class="px-4 py-2 text-right">18€</td></tr>
-        <tr><td class="px-4 py-2">Fingers de pollo</td><td class="px-4 py-2 text-right">7,50€</td><td class="px-4 py-2 text-right">10€</td></tr>
-        <tr><td class="px-4 py-2">Cazuela de embutidos tradicionales (Longaniza aragonesa, chistorra y chorizo)</td><td class="px-4 py-2 text-right">9,50€</td><td class="px-4 py-2 text-right">12€</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold text-green-800 mb-4 flex items-center gap-2">🍔 HAMBURGUESAS <span class="text-sm font-normal text-gray-600 ml-2">(Con patatas fritas)</span></h2>
-
-  <div class="overflow-x-auto">
-    <table class="table-auto w-full border border-gray-300 text-left text-sm">
-      <thead class="bg-green-100 text-green-900">
-        <tr>
-          <th class="px-4 py-2">Hamburguesa</th>
-          <th class="px-4 py-2 text-right">Precio</th>
-        </tr>
-      </thead>
-      <tbody class="bg-white text-gray-700">
-        <tr><td class="px-4 py-2">Completa <span class="block text-gray-500 text-xs">Lechuga, tomate, cebolla, queso y huevo</span></td><td class="px-4 py-2 text-right">8,50€</td></tr>
-        <tr><td class="px-4 py-2">Secreto <span class="block text-gray-500 text-xs">Lechuga, tomate, huevo y salsa secreto</span></td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Roquefort <span class="block text-gray-500 text-xs">Lechuga, tomate, huevo, cebolla, bacon y queso roquefort</span></td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Queso de cabra <span class="block text-gray-500 text-xs">Lechuga, tomate, huevo, cebolla, bacon y queso de cabra</span></td><td class="px-4 py-2 text-right">9,50€</td></tr>
-        <tr><td class="px-4 py-2">Black Angus <span class="block text-gray-500 text-xs">Lechuga, tomate, cebolla, huevo, queso y bacon</span></td><td class="px-4 py-2 text-right">10€</td></tr>
-        <tr><td class="px-4 py-2">Black Angus con queso de cabra <span class="block text-gray-500 text-xs">Lechuga, tomate, cebolla, queso de cabra, huevo y bacon</span></td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Black Angus con cebolla caramelizada <span class="block text-gray-500 text-xs">Lechuga, tomate, queso, huevo, bacon y cebolla caramelizada</span></td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Guacamole <span class="block text-gray-500 text-xs">Lechuga, tomate, huevo, queso, bacon y guacamole</span></td><td class="px-4 py-2 text-right">10€</td></tr>
-        <tr><td class="px-4 py-2">Pechuga de pollo con guacamole <span class="block text-gray-500 text-xs">Pechuga, lechuga, tomate, huevo, queso, guacamole</span></td><td class="px-4 py-2 text-right">10€</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold text-green-800 mb-4 flex items-center gap-2">🍽 PLATOS COMBINADOS 
-    <span class="text-sm font-normal text-gray-600 ml-2">
-      (Con huevo, tostada de tomate, pimiento verde y patatas)
-    </span>
-  </h2>
-
-  <div class="overflow-x-auto">
-    <table class="table-auto w-full border border-gray-300 text-left text-sm">
-      <thead class="bg-green-100 text-green-900">
-        <tr>
-          <th class="px-4 py-2">Plato</th>
-          <th class="px-4 py-2 text-right">Precio</th>
-        </tr>
-      </thead>
-      <tbody class="bg-white text-gray-700">
-        <tr><td class="px-4 py-2">Lomo</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Longaniza aragonesa</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Chorizo</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Ternera</td><td class="px-4 py-2 text-right">14€</td></tr>
-        <tr><td class="px-4 py-2">Sepia</td><td class="px-4 py-2 text-right">14€</td></tr>
-        <tr><td class="px-4 py-2">Panceta a la plancha</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Pinchos adobados</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Hamburguesa</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Pechuga de pollo</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Pechuga empanada</td><td class="px-4 py-2 text-right">13€</td></tr>
-        <tr><td class="px-4 py-2">San Jacobo</td><td class="px-4 py-2 text-right">14€</td></tr>
-        <tr><td class="px-4 py-2">Lomo empanado</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Albóndigas</td><td class="px-4 py-2 text-right">12€</td></tr>
-        <tr><td class="px-4 py-2">Chipirones a la plancha con ensalada <span class="block text-xs text-gray-500">(sin patatas)</span></td><td class="px-4 py-2 text-right">14€</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-<section class="mb-12">
-  <h2 class="text-2xl font-semibold text-yellow-700 mb-4 flex items-center gap-2">⭐ ESPECIALIDADES DE LA CASA</h2>
-
-  <div class="overflow-x-auto">
-    <table class="table-auto w-full border border-gray-300 text-left text-sm">
-      <thead class="bg-yellow-100 text-yellow-900">
-        <tr>
-          <th class="px-4 py-2">Plato</th>
-          <th class="px-4 py-2 text-right">Mediano</th>
-          <th class="px-4 py-2 text-right">Grande</th>
-        </tr>
-      </thead>
-      <tbody class="bg-white text-gray-700">
-        <tr><td class="px-4 py-2">Provolone al horno</td><td class="px-4 py-2 text-right">14€</td><td class="px-4 py-2 text-right">–</td></tr>
-        <tr><td class="px-4 py-2">Huevos rotos con longaniza y pimientos</td><td class="px-4 py-2 text-right">14€</td><td class="px-4 py-2 text-right">19€</td></tr>
-        <tr><td class="px-4 py-2">Huevos rotos con morcilla</td><td class="px-4 py-2 text-right">14€</td><td class="px-4 py-2 text-right">19€</td></tr>
-        <tr><td class="px-4 py-2">Huevos rotos con chistorra y pimiento</td><td class="px-4 py-2 text-right">14€</td><td class="px-4 py-2 text-right">19€</td></tr>
-        <tr><td class="px-4 py-2">Huevos rotos con jamón y foie</td><td class="px-4 py-2 text-right">14€</td><td class="px-4 py-2 text-right">19€</td></tr>
-        <tr><td class="px-4 py-2">Huevos rotos con jamón curado y pimiento rojo</td><td class="px-4 py-2 text-right">14€</td><td class="px-4 py-2 text-right">19€</td></tr>
-        <tr><td class="px-4 py-2">Huevos rotos con pisto y gulas</td><td class="px-4 py-2 text-right">14€</td><td class="px-4 py-2 text-right">19€</td></tr>
-        <tr><td class="px-4 py-2">Magras con tomate</td><td class="px-4 py-2 text-right">12€</td><td class="px-4 py-2 text-right">–</td></tr>
-        <tr><td class="px-4 py-2">Magras con tomate y huevo</td><td class="px-4 py-2 text-right">14€</td><td class="px-4 py-2 text-right">–</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-        <!-- Repite esta estructura para todas las secciones -->
-      </div>
-    </div>
-
-    
-
-  <script>
-    function showMenu(lang) {
-      document.querySelectorAll('.menu-language').forEach(el => el.classList.add('hidden'));
-      document.getElementById('menu-' + lang).classList.remove('hidden');
-    }
-  </script>
+    <h2>Especialidades</h2>
+    <ul>
+        <li>Provolone: 14€</li>
+        <li>Huevos rotos longaniza: 16€</li>
+        <li>Huevos rotos morcilla: 16€</li>
+        <li>Huevos rotos chistorra: 16€</li>
+        <li>Huevos rotos jamón foie: 16€</li>
+        <li>Huevos rotos jamón curado: 16€</li>
+        <li>Huevos rotos pisto gulas: 16€</li>
+        <li>Magras tomate: 12€</li>
+        <li>Magras tomate huevo: 14€</li>
+    </ul>
 </body>
-
 </html>
